@@ -3,5 +3,6 @@
 ## Packages
 Install the following packages:
 ```
-npm init
+$ npm init
+$ npm install express --save-dev
 ```

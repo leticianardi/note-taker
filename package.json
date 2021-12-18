@@ -1,14 +1,22 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Install the following packages:\r ```\r npm init\r ```",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leticianardi/note-taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leticianardi/note-taker/issues"
+  },
+  "homepage": "https://github.com/leticianardi/note-taker#readme",
+  "devDependencies": {
+    "express": "^4.17.2"
   }
 }
