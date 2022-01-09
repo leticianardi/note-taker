@@ -1,1 +1,11 @@
-[{"title":"Test Title","text":"Test text"}]
+[
+  {
+    "title": "How to use this app",
+    "text": "Write the title and note in their boxes. Salve the nove on the right corner."
+  },
+  {
+    "title": "nota 1",
+    "text": "texto\n",
+    "id": "4cb7868b-e3b0-4457-8eb1-f2a2b2c3c5d7"
+  }
+]
