@@ -30,6 +30,16 @@ app.post('/api/notes', (req, res) => {
   fs.writeFileSync('./db/db.json', JSON.stringify(notes));
   res.json(notes);
 });
+
+// delete routes
+app.delete('/api/notes/:id', (req, res) => {
+  const notes = JSON.parse(fs.readFileSync('./db/db.json'));
+
+  const deleteNote = notes.filter((rmvNote) => rmvNote.id !== req.params.id);
+  fs.writeFileSync('./db/db.json', JSON.stringify(deleteNote));
+  res.json(deleteNote);
+});
+
 // HTML > get homepage
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
