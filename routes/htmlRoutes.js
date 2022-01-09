@@ -1,13 +1,14 @@
-const res = require('express/lib/response');
-const path = require('path');
-const router = require('express').Router();
+// const app = require('express');
+// const path = require('path');
 
-router.get('*', (req, resp) => {
- res.sendFile(path.join(__dirname, '../public/index.html'));
-});
+// // get index
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, '/public/index.html'));
+// });
 
-router.get('/notes', (req, resp) => {
- res.sendFile(path.join(__dirname, '../public/notes.html'));
-});
+// //get notes
+// app.get('/notes', (req, res) => {
+//   res.sendFile(path.join(__dirname, '/public/notes.html'));
+// });
 
-module.exports = router;
+// module.exports = app;
